@@ -5,14 +5,24 @@ package com.example.mypc.project_02.model;
  */
 
 public class Album {
+    String txtAlbumId;
     String txtAlbumName;
     String txtAlbumDescription;
     String txtAlbumPic;
 
-    public Album(String txtAlbumName, String txtAlbumDescription, String txtAlbumPic) {
+    public Album(String txtAlbumId, String txtAlbumName, String txtAlbumDescription, String txtAlbumPic) {
+        this.txtAlbumId = txtAlbumId;
         this.txtAlbumName = txtAlbumName;
         this.txtAlbumDescription = txtAlbumDescription;
         this.txtAlbumPic = txtAlbumPic;
+    }
+
+    public String getTxtAlbumId() {
+        return txtAlbumId;
+    }
+
+    public void setTxtAlbumId(String txtAlbumId) {
+        this.txtAlbumId = txtAlbumId;
     }
 
     public String getTxtAlbumName() {

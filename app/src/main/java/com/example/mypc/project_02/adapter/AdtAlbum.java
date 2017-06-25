@@ -19,12 +19,14 @@ import java.util.List;
  */
 
 public class AdtAlbum extends RecyclerView.Adapter<AdtAlbum.AlbumViewHolder> {
+    AlbumClickListener listener;
     List<Album> mListAlbum;
     Context mContext;
 
-    public AdtAlbum(List<Album> mListAlbum, Context mContext) {
+    public AdtAlbum(List<Album> mListAlbum, Context mContext, AlbumClickListener listener) {
         this.mListAlbum = mListAlbum;
         this.mContext = mContext;
+        this.listener = listener;
     }
 
     @Override
@@ -46,6 +48,7 @@ public class AdtAlbum extends RecyclerView.Adapter<AdtAlbum.AlbumViewHolder> {
     }
 
     class AlbumViewHolder extends RecyclerView.ViewHolder{
+        TextView txtAlbumId;
         ImageView imgAlbumPic;
         TextView txtAlbumName;
 
@@ -53,6 +56,19 @@ public class AdtAlbum extends RecyclerView.Adapter<AdtAlbum.AlbumViewHolder> {
             super(itemView);
             imgAlbumPic = (ImageView) itemView.findViewById(R.id.imgAlbumPic);
             txtAlbumName = (TextView) itemView.findViewById(R.id.txtAlbumName);
+            txtAlbumId = (TextView) itemView.findViewById(R.id.txtAlbumId);
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if(listener != null) {
+                        listener.onClick();
+                    }
+                }
+            });
         }
+    }
+
+    public interface AlbumClickListener{
+        void onClick();
     }
 }

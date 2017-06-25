@@ -1,16 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal" android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-    <ImageView
-        android:id="@+id/imgAlbumPic"
-        android:layout_width="0dp"
-        android:layout_height="100dp"
-        android:layout_weight="2"/>
-    <TextView
-        android:id="@+id/txtAlbumName"
-        android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="5"
-        android:text="Tên album"/>
+        card_view:cardElevation="@dimen/cardview_default_elevation"
+        card_view:cardCornerRadius="4dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/imgAlbumPic"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:scaleType="fitCenter"/>
+            <TextView
+                android:id="@+id/txtAlbumName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:text="Tên album"/>
+            <TextView
+                android:id="@+id/txtAlbumId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="Tên album"/>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
 </LinearLayout>
