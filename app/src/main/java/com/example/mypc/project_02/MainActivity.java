@@ -16,6 +16,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements AdtAlbum.AlbumClickListener {
+
+    public static final String SELECT_ALBUM_ID = "com.example.mypc.project02.selectedalbum";
     RecyclerView rcvListAlbums;
 
     @Override
@@ -42,18 +44,21 @@ public class MainActivity extends AppCompatActivity implements AdtAlbum.AlbumCli
     public List<Album> dummyData() {
         List<Album> lstAlbum = new ArrayList<>();
         lstAlbum.add(new Album("album1", "album1", "album1", "albumcover1"));
-        lstAlbum.add(new Album("album1", "album1", "album1", "albumcover1"));
-        lstAlbum.add(new Album("album1", "album1", "album1", "albumcover1"));
-        lstAlbum.add(new Album("album1", "album1", "album1", "albumcover1"));
-        lstAlbum.add(new Album("album1", "album1", "album1", "albumcover1"));
-        lstAlbum.add(new Album("album1", "album1", "album1", "albumcover1"));
-        lstAlbum.add(new Album("album1", "album1", "album1", "albumcover1"));
-        lstAlbum.add(new Album("album1", "album1", "album1", "albumcover1"));
+        lstAlbum.add(new Album("album2", "album1", "album1", "albumcover1"));
+        lstAlbum.add(new Album("album3", "album1", "album1", "albumcover1"));
+        lstAlbum.add(new Album("album4", "album1", "album1", "albumcover1"));
+        lstAlbum.add(new Album("album5", "album1", "album1", "albumcover1"));
+        lstAlbum.add(new Album("album6", "album1", "album1", "albumcover1"));
+        lstAlbum.add(new Album("album7", "album1", "album1", "albumcover1"));
+        lstAlbum.add(new Album("album8", "album1", "album1", "albumcover1"));
         return lstAlbum;
     }
 
     @Override
-    public void onClick() {
+    public void onClick(String albumId) {
         // Move to Album detail activity
+        Intent itAlbumDetail = new Intent(this, ActAlbumDetail.class);
+        itAlbumDetail.putExtra(SELECT_ALBUM_ID, albumId);
+        startActivity(itAlbumDetail);
     }
 }

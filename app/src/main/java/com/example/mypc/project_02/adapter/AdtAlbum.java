@@ -38,6 +38,7 @@ public class AdtAlbum extends RecyclerView.Adapter<AdtAlbum.AlbumViewHolder> {
     @Override
     public void onBindViewHolder(AlbumViewHolder holder, int position) {
         Album album = mListAlbum.get(position);
+        holder.txtAlbumId.setText(album.getTxtAlbumId());
         holder.txtAlbumName.setText(album.getTxtAlbumName());
         holder.imgAlbumPic.setBackground(mContext.getResources().getDrawable(R.drawable.album1, null));
     }
@@ -61,7 +62,7 @@ public class AdtAlbum extends RecyclerView.Adapter<AdtAlbum.AlbumViewHolder> {
                 @Override
                 public void onClick(View v) {
                     if(listener != null) {
-                        listener.onClick();
+                        listener.onClick(txtAlbumId.getText().toString());
                     }
                 }
             });
@@ -69,6 +70,6 @@ public class AdtAlbum extends RecyclerView.Adapter<AdtAlbum.AlbumViewHolder> {
     }
 
     public interface AlbumClickListener{
-        void onClick();
+        void onClick(String albumId);
     }
 }

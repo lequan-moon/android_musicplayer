@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.mypc.project_02.ActAlbumDetail">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+        <ImageView
+            android:id="@+id/imgAlbumPic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/btnPlay"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:padding="30dp"
+            android:layout_margin="30dp"
+            android:background="@drawable/ic_play_circle_filled_black_36dp"/>
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lstSong"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"></android.support.v7.widget.RecyclerView>
+</LinearLayout>
