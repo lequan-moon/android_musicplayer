@@ -20,6 +20,7 @@
         </activity>
         <activity android:name=".ActAlbumDetail"></activity>
         <service android:name=".service.ServiceMusicPlayer"/>
+        <receiver android:name=".receiver.RcvMusicServiceBroadcast"/>
     </application>
 
 </manifest>

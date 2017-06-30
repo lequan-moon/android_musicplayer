@@ -1,7 +1,10 @@
 package com.example.mypc.project_02;
 
+import android.content.BroadcastReceiver;
 import android.content.ComponentName;
+import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.ServiceConnection;
 import android.media.MediaMetadataRetriever;
 import android.os.Environment;
@@ -16,6 +19,7 @@ import android.widget.Toast;
 
 import com.example.mypc.project_02.adapter.AdtSong;
 import com.example.mypc.project_02.model.Song;
+import com.example.mypc.project_02.receiver.RcvMusicServiceBroadcast;
 import com.example.mypc.project_02.service.ServiceMusicPlayer;
 import com.example.mypc.project_02.ulti.FileHelper;
 
@@ -75,6 +79,12 @@ public class ActAlbumDetail extends AppCompatActivity implements AdtSong.OnPlayS
                 Toast.makeText(ActAlbumDetail.this, "Play album", Toast.LENGTH_SHORT).show();
             }
         });
+        IntentFilter intFilter = new IntentFilter();
+        intFilter.addAction(ServiceMusicPlayer.ACTION_PLAY_SONG);
+        intFilter.addAction(ServiceMusicPlayer.ACTION_PAUSE_SONG);
+        intFilter.addAction(ServiceMusicPlayer.ACTION_NEXT_SONG);
+        intFilter.addAction(ServiceMusicPlayer.ACTION_BACK_SONG);
+        registerReceiver(new RcvMusicServiceBroadcast(), intFilter);
     }
 
     private void initControls() {
@@ -117,13 +127,12 @@ public class ActAlbumDetail extends AppCompatActivity implements AdtSong.OnPlayS
     public void onClick(String songId) {
         if(!isServiceBound)
             return;
-        Toast.makeText(this, "Playing songid:" + songId, Toast.LENGTH_SHORT).show();
         try {
-
             musicPlayerBinder.playSong(songId);
         } catch (IOException e) {
             e.printStackTrace();
             Toast.makeText(this, "File " + songId + " not found!", Toast.LENGTH_SHORT).show();
         }
     }
+
 }

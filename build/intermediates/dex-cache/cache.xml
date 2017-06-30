@@ -3,129 +3,21 @@
 
     <item
         is-multidex="false"
-        jar="D:\Projects\AD27\Project02\android_musicplayer\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.3.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
-        <dex dex="D:\Projects\AD27\Project02\android_musicplayer\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-25.3.1_9139d8f724d8a81b553a10bdd098660c8600f781.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\Projects\AD27\Project02\android_musicplayer\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\25.3.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="914f5d3e3ace66080e59613708f06d129a222e25">
-        <dex dex="D:\Projects\AD27\Project02\android_musicplayer\app\build\intermediates\pre-dexed\debug\com.android.support-cardview-v7-25.3.1_585d656e4b56ae92e305c7babc82866cda79e9be.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\Projects\AD27\Project02\android_musicplayer\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.3.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
-        <dex dex="D:\Projects\AD27\Project02\android_musicplayer\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.3.1_1400e6d9e51f57afa147b75ae221b2ff0147d943.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\Projects\AD27\Project02\android_musicplayer\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.3.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
-        <dex dex="D:\Projects\AD27\Project02\android_musicplayer\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-25.3.1_05d1d57d069c7645c03dff493811bca09e42575e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\Projects\AD27\Project02\android_musicplayer\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.3.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="D:\Projects\AD27\Project02\android_musicplayer\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-25.3.1_382f761f9e1302564a18c10412189c1bdc8cbbb0.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\Projects\AD27\Project02\android_musicplayer\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.3.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
-        <dex dex="D:\Projects\AD27\Project02\android_musicplayer\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-25.3.1_2fc9752017ad5f4ae030feddc31913f500bd62e8.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\Projects\AD27\Project02\android_musicplayer\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.3.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="95519720620b553f63afc789beba9ad582807f7c">
-        <dex dex="D:\Projects\AD27\Project02\android_musicplayer\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-25.3.1_5102f863a50fad3ed3db4c6a591e7f9c4211dd1a.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\QuanLM\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
+        jar="D:\Programs\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.3"
         sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
-        <dex dex="D:\Projects\AD27\Project02\android_musicplayer\app\build\intermediates\pre-dexed\debug\constraint-layout-solver-1.0.2_25a3904ca14e0e61566f4d6f6c57ef3b1c5d91a2.jar" />
+        <dex dex="D:\AD27\Projects\Project_02\app\build\intermediates\pre-dexed\debug\constraint-layout-solver-1.0.2_89d548e5fbe6bae11db25d992e34c64b4cb3a188.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="D:\Projects\AD27\Project02\android_musicplayer\app\build\intermediates\exploded-aar\com.android.support.constraint\constraint-layout\1.0.2\jars\classes.jar"
+        jar="D:\AD27\Projects\Project_02\app\build\intermediates\exploded-aar\com.android.support.constraint\constraint-layout\1.0.2\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.3"
         sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
-        <dex dex="D:\Projects\AD27\Project02\android_musicplayer\app\build\intermediates\pre-dexed\debug\com.android.support.constraint-constraint-layout-1.0.2_bcd017901b287002a968ed1d778761d1589409da.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\Projects\AD27\Project02\android_musicplayer\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.3.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
-        <dex dex="D:\Projects\AD27\Project02\android_musicplayer\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-25.3.1_339011412e5777851a67058a55e2817d2ae49bb5.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\QuanLM\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.3.1\support-annotations-25.3.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
-        <dex dex="D:\Projects\AD27\Project02\android_musicplayer\app\build\intermediates\pre-dexed\debug\support-annotations-25.3.1_b7539e27f34c6573e64f39819d8ab369985cbafb.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\Projects\AD27\Project02\android_musicplayer\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.3.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
-        <dex dex="D:\Projects\AD27\Project02\android_musicplayer\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-25.3.1_f99fb01b33ce9e7d3557fab2e3c0de3553e53477.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\Projects\AD27\Project02\android_musicplayer\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.3.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
-        <dex dex="D:\Projects\AD27\Project02\android_musicplayer\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-25.3.1_0ff898844c9e70c1a8cca3019091260db7945299.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\Projects\AD27\Project02\android_musicplayer\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.3.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
-        <dex dex="D:\Projects\AD27\Project02\android_musicplayer\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-25.3.1_19b35e9de54aefa5a3d0b63d63588ca23521c65f.jar" />
+        <dex dex="D:\AD27\Projects\Project_02\app\build\intermediates\pre-dexed\debug\com.android.support.constraint-constraint-layout-1.0.2_1010a36264980317fdf07e8e93180c09c6b7758e.jar" />
     </item>
 
 </items>
