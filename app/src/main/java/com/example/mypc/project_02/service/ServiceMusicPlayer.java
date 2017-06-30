@@ -53,7 +53,9 @@ public class ServiceMusicPlayer extends Service {
             itAlbumDetail.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             PendingIntent pendingIntAlbumDetail = PendingIntent.getActivity(mContext, 0, itAlbumDetail, PendingIntent.FLAG_UPDATE_CURRENT);
             Notification.Builder notibuilder = new Notification.Builder(mContext);
-            notibuilder.setSmallIcon(android.R.drawable.ic_media_pause)
+            notibuilder.
+                    setContentIntent(pendingIntAlbumDetail)
+                    .setSmallIcon(android.R.drawable.ic_media_pause)
                     .setOngoing(true)
                     .setContentTitle(filePath)
                     .setContentText("Playing " + filePath);
